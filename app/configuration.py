@@ -41,7 +41,6 @@ class ProductionConfig(Config):
 	#SQLALCHEMY_DATABASE_URI = "mysql+pymysql://db_user:db_pass@localhost/db_name"
 	SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'database.db')
 
-	SERVER_NAME   = 'www.yourdomain.us'
 	DEBUG         = False
 	TESTING       = False
 
@@ -57,7 +56,6 @@ class DevelopmentConfig(Config):
 	#SQLALCHEMY_DATABASE_URI = "mysql+pymysql://MYSQL_USER:MYSQL_PASS@localhost/MYSQL_DATABASE"
 	SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'database.db')
 
-	SERVER_NAME   = 'localhost:5000'
 	DEBUG	= False
 	TESTING	= False
 	FORCE_HTTPS = False
